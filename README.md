@@ -13,8 +13,8 @@ A fun, emoji-themed memory game built with SwiftUI. In this game, players flip c
 
 ## Screenshots
 
-| Home Screen | Game Screen |
-|-------------|-------------|
+| Home Screen | 
+|-------------|
 |![Game Screenshot](screenshot/ss.png)
 
 
