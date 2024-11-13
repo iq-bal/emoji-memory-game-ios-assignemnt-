@@ -1,4 +1,3 @@
-```markdown
 # Memoji Game
 
 A fun, emoji-themed memory game built with SwiftUI. In this game, players flip cards to find matching emoji pairs. Match all pairs to win the game!
