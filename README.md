@@ -13,9 +13,9 @@ A fun, emoji-themed memory game built with SwiftUI. In this game, players flip c
 
 ## Screenshots
 
-| Home Screen | 
-|-------------|
-|<img src="screenshot/ss.png" alt="Game Screenshot" width="300"/>|
+| Home Screen || Game Complete | 
+|-------------||-------------|
+|<img src="screenshot/ss.png" alt="Game Screenshot" width="300"/>||<img src="screenshot/Simulator Screenshot - iPhone 14 Pro - 2024-11-14 at 14.39.13.png" alt="Game Screenshot" width="300"/>|
 
 
 ## Code Overview
