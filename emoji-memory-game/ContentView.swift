@@ -1,8 +1,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    // Added two more emojis
-    @State private var emojis = ["🐶", "🐱", "🐰", "🐯", "🐸", "🦁", "🦄", "🐨", "🐼", "🦄", "🐼", "🐨", "🦁", "🐱", "🐶", "🐰", "🐸", "🐯", "🌟", "🏆"]
+    @State private var emojis = ["🐶", "🐱", "🐰", "🐯", "🐸", "🦁", "🦄", "🐨", "🐼", "🦄", "🐼", "🐨", "🦁", "🐱", "🐶", "🐰", "🐸", "🐯", "🏆", "🏆"]
     @State private var flippedIndices: Set<Int> = []
     @State private var matchedIndices: Set<Int> = []
     @State private var showWinAlert = false
@@ -68,10 +67,19 @@ struct ContentView: View {
                         Text("Reset")
                             .font(.title2)
                             .foregroundColor(.white)
-                            .padding()
-                            .background(Color.green)
-                            .cornerRadius(10)
+                            .padding(10)
+                            .frame(width: 100)
+                            .background(
+                                LinearGradient(gradient: Gradient(colors: [Color.green.opacity(0.8), Color.blue.opacity(0.8)]),
+                                               startPoint: .topLeading,
+                                               endPoint: .bottomTrailing)
+                            )
+                            .cornerRadius(15)
+                            .shadow(color: Color.black.opacity(0.2), radius: 10, x: 5, y: 5)
                     }
+                    .buttonStyle(PlainButtonStyle()) // Removes default button tap effect
+                    .scaleEffect(self.showWinAlert ? 1.0 : 1.1) // Slight scale-up on tap
+                    .animation(.spring(response: 0.3, dampingFraction: 0.5, blendDuration: 0), value: showWinAlert)
                     .padding(.trailing, 20)
                     
                 }
